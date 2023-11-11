@@ -33,7 +33,6 @@ LOGGERS = [
 sys.path.insert(0, str(STUFF_FOLDER))
 
 # try import private settings
-from settings_private import *
 try:
     from settings_private import *
 except (ImportError, ModuleNotFoundError):
