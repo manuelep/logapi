@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logapi"
+version = "0.0.1"
+authors = [
+  { name="Manuele Pesenti", email="manuele@inventati.org" },
+]
+description = "Just an API for logging webhooks"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "py4web"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/manuelep/logapi"
+"Bug Tracker" = "https://github.com/manuelep/logapi/issues"
+
+[project.scripts]
+link-logapi = "logapi:link_logapi"
